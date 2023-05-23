@@ -1,0 +1,28 @@
+{
+  "estudante": [
+    {
+      "id": 1,
+      "name": "sergio donizete",
+      "email": "rafael@gmail.com",
+      "idade": 12,
+      "nivel": "medio",
+      "escola": "Fatec"
+    },
+    {
+      "id": 2,
+      "name": "",
+      "email": "",
+      "idade": "",
+      "nivel": "",
+      "escola": ""
+    },
+    {
+      "id": 3,
+      "name": "Rafael",
+      "email": "faelgomes2003@gmail.com",
+      "idade": "14",
+      "nivel": "superirr",
+      "escola": "faec"
+    }
+  ]
+}

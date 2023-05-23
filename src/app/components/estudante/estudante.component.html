@@ -1,0 +1,72 @@
+<div class="container mt-5">
+   <div class="row">
+     <div class="col-12 col-md-6">
+       <div class="row mb-4">
+         <div class="col-10  m-auto float-start border border-dark rounded-2 bg-dark text-white p-4">
+           <form [formGroup]="formGroupEstudante">
+            <div class="row">
+               <div class="col-6">
+                  <label for="name" class="form-label">Nome:</label>
+                  <input type="text" formControlName="name" class="form-control" id="name" placeholder="Nome"> 
+               </div>
+               <div class="col-6">
+                  <label for="idade" class="form-label">Idade</label>
+                  <input type="text" formControlName="idade" class="form-control" id="idade" placeholder="Idade"> 
+               </div>
+            </div>
+             <div class="mb-3">
+               <label for="email" class="form-label">E-mail</label>
+               <input type="email" formControlName="email" class="form-control" id="email" placeholder="E-mail">
+             </div>
+
+             <div class="row">
+               <div class="col-6">
+                  <label for="nivel" class="form-label">Nível</label>
+                  <input type="nivel" formControlName="nivel" class="form-control" id="nivel" placeholder="Nível">
+               </div>
+               <div class="col-6">
+                  <label for="escola" class="form-label">Instituição</label>
+                  <input type="escola" formControlName="escola" class="form-control" id="escola" placeholder="Instituição">
+               </div>
+             </div>
+
+             <div class="d-flex justify-content-end m-4  ">
+               <button type="button" class="btn btn-secondary" (click)="save()">Salvar</button>
+             </div>
+           </form>
+         </div>
+       </div>
+     </div>
+       <div class="col-12 col-md-6">
+         <div class="row">
+           <table class="table table-dark table-striped ">
+             <thead>
+               <tr>
+                 <th class="p-3" scope="col">Id</th>
+                 <th class="p-3" scope="col">Nome</th>
+                 <th class="p-3" scope="col">Idade</th>
+                 <th class="p-3" scope="col">Email</th>
+                 <th class="p-3" scope="col">Nível</th>
+                 <th class="p-3" scope="col">Instituição</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr *ngFor="let client of estudantes">
+                 <th scope="row">#{{client.id | number:'3.0'}}</th>
+                 <td>{{client.name}}</td>
+                 <td>{{client.idade}}</td>   
+                 <td>{{client.email}}</td>
+                 <td>{{client.nivel}}</td>
+                 <td>{{client.escola}}</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
